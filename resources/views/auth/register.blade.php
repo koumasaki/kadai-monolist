@@ -12,22 +12,22 @@
                 {!! Form::open(['route' => 'signup.post']) !!}
                 <div class="form-group @if(!empty($errors->first('name'))) has-error @endif">
                     {!! Form::label('name', 'お名前') !!}
-                    {!! Form::text('name', old('name'), ['class' => 'form-controller']) !!}
+                    {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                     <span class="help-block">{{$errors->first('name')}}</span>
                 </div>
                 <div class="form-group @if(!empty($errors->first('email'))) has-error @endif">
                     {!! Form::label('email', 'メールアドレス') !!}
-                    {!! Form::email('email', old('email'), ['class' => 'form-controller']) !!}
+                    {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
                     <span class="help-block">{{$errors->first('email')}}</span>
                 </div>
                 <div class="form-group @if(!empty($errors->first('password'))) has-error @endif">
                     {!! Form::label('password', 'パスワード') !!}
-                    {!! Form::password('password', ['class' => 'form-controller']) !!}
+                    {!! Form::password('password', ['class' => 'form-control']) !!}
                     <span class="help-block">{{$errors->first('password')}}</span>
                 </div>
                 <div class="form-group @if(!empty($errors->first('password_confirmation'))) has-error @endif">
                     {!! Form::label('password_confirmation', 'パスワード（確認）') !!}
-                    {!! Form::password('password_confirmation', ['class' => 'form-controller']) !!}
+                    {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                     <span class="help-block">{{$errors->first('password_confirmation')}}</span>
                 </div>
                 
