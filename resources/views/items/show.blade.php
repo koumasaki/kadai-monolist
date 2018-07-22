@@ -37,7 +37,11 @@
             <div class="panel panel-default">
                 <div class="panel-heading text-center">Haveしたユーザー</div>
                 <div class="panel-body">
-                    
+                    <ul>
+                    @foreach ($have_users as $user)
+                        <li><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a></li>
+                    @endforeach
+                    </ul>
                 </div>
             </div>
         </div>

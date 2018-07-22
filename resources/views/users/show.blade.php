@@ -14,7 +14,7 @@
             </li>
             <li>
                 <div class="status-label">HAVE</div>
-                <div id="have_count" class="status-value">##</div>
+                <div id="have_count" class="status-value">{{ $count_have }}</div>
             </li>
         </ul>
     </div>
